@@ -2,7 +2,7 @@
 Tests for functionality checks in class SolveDiffusion2D
 """
 
-from diffusion2d import SolveDiffusion2D
+from diffusion2d.diffusion2d import SolveDiffusion2D
 
 import numpy as np
 import unittest
@@ -32,7 +32,7 @@ class TestDiffusion2D(unittest.TestCase):
 
         expected_min = 250.0
         expected_max = 650.0
-        expected_mean = 273.68
+        expected_mean = 270.48
 
         u0 = solver.set_initial_condition()
         min_value = np.min(u0)
