@@ -42,7 +42,7 @@ jobs:
         run: pip install coverage
 
       - name: Install pytest, numpy, matplotlib
-        run: pip install pytest numpy matplotlib unittest
+        run: pip install pytest numpy matplotlib
 
       - name: Run tests and collect coverage
         run: |
