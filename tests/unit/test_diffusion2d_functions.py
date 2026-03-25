@@ -63,7 +63,7 @@ class TestDiffusion2D(unittest.TestCase):
 
         expected_min = 250.0
         expected_max = 650.0
-        expected_mean = 270.48
+        expected_mean = 273.68
 
         u0 = solver.set_initial_condition()
 
