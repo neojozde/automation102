@@ -38,6 +38,12 @@ jobs:
           pip install pytest coverage
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      - name: Install coverage
+        run: pip install coverage
+
+      - name: Install pytest, numpy, matplotlib
+        run: pip install pytest numpy matplotlib unittest
+
       - name: Run tests and collect coverage
         run: |
           coverage run -m pytest
